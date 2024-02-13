@@ -8,7 +8,7 @@ kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
   name: manifests
-  namespace: mcgonagle
+  namespace: mcgonagle-fleet-manifest-example
 spec:
   repo: https://github.com/mcgonagle/fleet-examples
   paths:
