@@ -1,4 +1,4 @@
-name: GitOps SuperLinter
+name: GitOps SuperLinter and Commenter
 
 on: workflow_dispatch
 
