@@ -1,4 +1,19 @@
-     - uses: actions/github-script@v6
+name: GitOps SuperLinter
+
+on: workflow_dispatch
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest 
+    steps:
+      - uses: actions/checkout@v3
+      - name: Lint Code Base
+        uses: super-linter/super-linter@v5
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: master
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      - uses: actions/github-script@v6
         with:
           github-token: ${{secrets.GH_TOKEN}}
           script: |
