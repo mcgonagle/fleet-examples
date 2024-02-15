@@ -1,0 +1,13 @@
+name: webhook caller
+
+on: workflow_dispatch
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest 
+    steps:
+    - name: Invoke deployment hook
+      uses: distributhor/workflow-webhook@v3
+      with:
+        webhook_url: ${{ secrets.WEBHOOK_URL }}
+        webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
