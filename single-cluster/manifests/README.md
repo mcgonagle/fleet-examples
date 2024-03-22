@@ -12,7 +12,7 @@ metadata:
 spec:
   repo: https://github.com/mcgonagle/fleet-examples
   paths:
-  - single-cluster/manifests
+    - single-cluster/manifests
 ```
 
 
