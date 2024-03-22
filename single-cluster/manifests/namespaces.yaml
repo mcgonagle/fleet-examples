@@ -3,6 +3,8 @@ kind: Namespace
 metadata:
   name: mcgonagle
 
+---
+
 apiVersion: v1
 kind: Namespace
 metadata:
