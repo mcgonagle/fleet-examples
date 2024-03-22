@@ -9,9 +9,9 @@ kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
   name: helm
-  namespace: fleet-local
+  namespace: mcgonagle-fleet-helm-example
 spec:
-  repo: https://github.com/rancher/fleet-examples
+  repo: https://github.com/mcgonagle/fleet-examples
   paths:
-  - single-cluster/helm
+    - single-cluster/helm
 ```
